@@ -57,7 +57,7 @@ The first step in this chain is "un-distorting the input image " using the camer
 
 Here you can notice the correction by looking on the bottom left of the image and how it is corrected
 
-######Note: the distortion correction can be found in the notebook under the part "2. Distortion Correction"
+###### Note: the distortion correction can be found in the notebook under the part "2. Distortion Correction"
 
 #### 2. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -136,7 +136,7 @@ An example of the output of the forward search:
 
 I used the same technique mentioned in the lectures by calculating the radius of curvature from the first and second derivative of the polynomial function and convert the result from pixel space to xy space. In the same method I calculated also the distance to center. The implementation can be found in private member function called `__CalcCurvature()`, I reused here many code parts from the lectures and from forums also to verify I'm calculating it correctly. I tested it on the following image and the results was (Radius of curvature for example: 22.293340952 m, 0.081 m Distance from lane center which looks reasonable ! 
 
-######Note the below image is output of private member function called `__DrawData()`
+###### Note the below image is output of private member function called `__DrawData()`
 
 ![alt text][image7]
 
@@ -153,7 +153,7 @@ I implemented this step in private member function called `__DrawLane()` and thi
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](https://github.com/iabdelmo/Lane-Lines-Detection/blob/master/project_video_output.mp4)
 
 ---
 
